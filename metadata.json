@@ -1,0 +1,526 @@
+{
+    "university_students_mental_health": {
+        "Timestamp": {
+            "NA": 1.0
+        },
+        "Gender": {
+            "Identifier/Human/Gender": 1.0
+        },
+        "Age": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "Course": {
+            "NA": 0.4,
+            "Identifier/Human/Subject": 0.4,
+            "Identifier/Devices/Characteristics": 0.2
+        },
+        "YearOfStudy": {
+            "NA": 0.8,
+            "Identifier/Human/Subject": 0.2
+        },
+        "CGPA": {
+            "NA": 0.4,
+            "Identifier/Human/Subject": 0.6
+        },
+        "Depression": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "Anxiety": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "PanicAttack": {
+            "Behavioral": 0.4,
+            "Identifier/Human/Subject": 0.6
+        },
+        "SpecialistTreatment": {
+            "Behavioral": 0.4,
+            "Identifier/Human/Subject": 0.2,
+            "Behavioral/Interactions/Collaboration": 0.2,
+            "NA": 0.2
+        },
+        "SymptomFrequency_Last7Days": {
+            "Behavioral/Actions/Habit": 0.6,
+            "NA": 0.2,
+            "Identifier/Human/Subject": 0.2
+        },
+        "HasMentalHealthSupport": {
+            "Behavioral/Interactions": 0.4,
+            "Identifier/Human/Subject": 0.4,
+            "Behavioral/Interactions/Collaboration": 0.2
+        },
+        "SleepQuality": {
+            "Behavioral/Actions/Habit": 0.4,
+            "NA": 0.2,
+            "Identifier/Human/Subject": 0.4
+        },
+        "StudyStressLevel": {
+            "Behavioral": 0.2,
+            "NA": 0.4,
+            "Identifier/Human/Subject": 0.4
+        },
+        "StudyHoursPerWeek": {
+            "Behavioral/Actions/Habit": 0.7142857142857143,
+            "Temporal/Period": 0.2857142857142857
+        },
+        "AcademicEngagement": {
+            "Behavioral/Interactions": 0.2,
+            "Behavioral/Interactions/Relationships": 0.8
+        }
+    },
+    "student_admission_record": {
+        "Name": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "Age": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "Gender": {
+            "Identifier/Human/Gender": 1.0
+        },
+        "Admission Test Score": {
+            "NA": 0.4,
+            "Identifier/Human/Subject": 0.4,
+            "Identifier/Devices/Characteristics": 0.2
+        },
+        "High School Percentage": {
+            "NA": 0.4,
+            "Identifier/Human/Subject": 0.4,
+            "Identifier/Devices/Characteristics": 0.2
+        },
+        "City": {
+            "Identifier/Human/Gender": 0.2,
+            "Identifier/Human": 0.2,
+            "NA": 0.4,
+            "Identifier/Human/Subject": 0.2
+        },
+        "Admission Status": {
+            "NA": 0.6,
+            "Identifier/Human/Subject": 0.4
+        }
+    },
+    "student_information_dataset": {
+        "StudentID": {
+            "Identifier/Human/Online": 1.0
+        },
+        "Name": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "Age": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "Email": {
+            "Identifier/Human/Online": 1.0
+        },
+        "Department": {
+            "Identifier/Human/Object": 1.0
+        },
+        "GPA": {
+            "NA": 0.4,
+            "Identifier/Human/Subject": 0.6
+        },
+        "GraduationYear": {
+            "NA": 0.4,
+            "Identifier/Human": 0.2,
+            "Identifier/Human/Subject": 0.2,
+            "Behavioral/Actions/Single": 0.2
+        }
+    },
+    "customer_shopping_dataset": {
+        "Age": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "Gender": {
+            "Identifier/Human/Gender": 0.4,
+            "Identifier/Human": 0.2,
+            "Identifier/Human/Subject": 0.2,
+            "NA": 0.2
+        },
+        "Item Purchased": {
+            "Behavioral/Transactional/Shopping": 1.0
+        },
+        "Category": {
+            "Behavioral/Transactional/Shopping": 1.0
+        },
+        "Purchase Amount (USD)": {
+            "Behavioral/Transactional/Shopping": 1.0
+        },
+        "Location": {
+            "Identifier/Human/Object": 0.4,
+            "NA": 0.4,
+            "Identifier/Devices/Address": 0.2
+        },
+        "Size": {
+            "Behavioral/Transactional/Shopping": 0.2,
+            "Identifier/Human/Object": 0.2,
+            "NA": 0.2,
+            "Identifier/Human/Subject": 0.4
+        },
+        "Color": {
+            "Behavioral/Transactional/Shopping": 0.2,
+            "NA": 0.8
+        },
+        "Season": {
+            "Behavioral/Actions/Habit": 0.4,
+            "NA": 0.6
+        },
+        "Review Rating": {
+            "Behavioral/Actions/Single": 0.4,
+            "NA": 0.6
+        },
+        "Subscription Status": {
+            "NA": 1.0
+        },
+        "Payment Method": {
+            "Behavioral/Transactional/Financial": 0.8,
+            "Identifier/Devices/Characteristics": 0.2
+        },
+        "Shipping Type": {
+            "NA": 0.4,
+            "Behavioral/Transactional/Shopping": 0.6
+        },
+        "Discount Applied": {
+            "Behavioral/Transactional/Financial": 0.4,
+            "Behavioral/Transactional/Shopping": 0.4,
+            "NA": 0.2
+        },
+        "Promo Code Used": {
+            "Behavioral/Transactional/Financial": 0.4,
+            "Behavioral/Transactional/Shopping": 0.6
+        },
+        "Previous Purchases": {
+            "Behavioral/Transactional/Shopping": 0.6666666666666666,
+            "Behavioral/Actions/Habit": 0.16666666666666666,
+            "Behavioral/Frequency/History": 0.16666666666666666
+        },
+        "Preferred Payment Method": {
+            "Behavioral/Transactional/Financial": 0.8,
+            "Behavioral/Transactional/Shopping": 0.2
+        },
+        "Frequency of Purchases": {
+            "Behavioral/Transactional/Shopping": 0.8,
+            "Behavioral/Actions/Habit": 0.2
+        }
+    },
+    "student_lifestyle_dataset": {
+        "Study_Hours_Per_Day": {
+            "Behavioral/Actions/Habit": 1.0
+        },
+        "Extracurricular_Hours_Per_Day": {
+            "Behavioral/Actions/Habit": 1.0
+        },
+        "Sleep_Hours_Per_Day": {
+            "Behavioral/Actions/Habit": 1.0
+        },
+        "Social_Hours_Per_Day": {
+            "Behavioral/Interactions/Connections": 0.16666666666666666,
+            "Behavioral/Interactions/Relationships": 0.6666666666666666,
+            "Behavioral/Actions/Habit": 0.16666666666666666
+        },
+        "Physical_Activity_Hours_Per_Day": {
+            "Behavioral/Actions/Habit": 1.0
+        },
+        "GPA": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "Stress_Level": {
+            "Identifier/Biological/Biometric": 1.0
+        }
+    },
+    "gym_members_exercise_dataset": {
+        "Weight (kg)": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "Height (m)": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "Max_BPM": {
+            "Identifier/Human/Subject": 0.8,
+            "Behavioral/Actions/Habit": 0.2
+        },
+        "Avg_BPM": {
+            "Identifier/Human/Subject": 0.8,
+            "Behavioral/Actions/Habit": 0.2
+        },
+        "Resting_BPM": {
+            "Identifier/Human/Subject": 0.8,
+            "Behavioral/Actions/Habit": 0.2
+        },
+        "Session_Duration (hours)": {
+            "NA": 0.4,
+            "Behavioral/Actions/Habit": 0.4,
+            "Behavioral/Actions/Single": 0.2
+        },
+        "Calories_Burned": {
+            "NA": 0.8,
+            "Identifier/Human/Subject": 0.2
+        },
+        "Workout_Type": {
+            "NA": 0.4,
+            "Behavioral/Actions/Habit": 0.4,
+            "Behavioral/Actions/Single": 0.2
+        },
+        "Fat_Percentage": {
+            "Identifier/Human/Subject": 0.8,
+            "NA": 0.2
+        },
+        "Water_Intake (liters)": {
+            "Behavioral/Actions/Habit": 0.2,
+            "Behavioral/Actions/Single": 0.8
+        },
+        "Workout_Frequency (days/week)": {
+            "Behavioral/Actions/Habit": 0.8,
+            "Behavioral/Actions/Single": 0.2
+        },
+        "Experience_Level": {
+            "Behavioral/Actions": 0.2,
+            "Behavioral/Actions/Habit": 0.4,
+            "Identifier/Human/Subject": 0.4
+        },
+        "BMI": {
+            "Identifier/Human/Subject": 1.0
+        }
+    },
+    "linkedIn_Influencers_data": {
+        "name": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "headline": {
+            "Identifier/Human/Online": 0.8,
+            "Identifier/Online": 0.2
+        },
+        "location": {
+            "Identifier/Human/Subject": 0.4,
+            "NA": 0.2,
+            "Identifier/Devices/Address": 0.2,
+            "Identifier/Online": 0.2
+        },
+        "followers": {
+            "Behavioral/Interactions/Connections": 1.0
+        },
+        "connections": {
+            "Behavioral/Interactions/Connections": 1.0
+        },
+        "about": {
+            "Identifier/Human/Online": 1.0
+        },
+        "time_spent": {
+            "Behavioral/Digital_Footprint/Content_Creation": 0.4,
+            "Behavioral/Digital_Footprint/Online_Behavior": 0.2,
+            "Behavioral/Actions/Habit": 0.4
+        },
+        "content": {
+            "Behavioral/Digital_Footprint/Content_Creation": 1.0
+        },
+        "content_links": {
+            "Behavioral/Digital_Footprint/Content_Creation": 1.0
+        },
+        "media_type": {
+            "Behavioral/Digital_Footprint/Content_Creation": 1.0
+        },
+        "media_url": {
+            "Behavioral/Digital_Footprint/Content_Creation": 1.0
+        },
+        "num_hashtags": {
+            "Behavioral/Digital_Footprint/Content_Creation": 1.0
+        },
+        "hashtag_followers": {
+            "Behavioral/Digital_Footprint/Content_Creation": 1.0
+        },
+        "hashtags": {
+            "Behavioral/Digital_Footprint/Content_Creation": 1.0
+        },
+        "reactions": {
+            "Behavioral/Digital_Footprint/Online_Behavior": 1.0
+        },
+        "comments": {
+            "Behavioral/Interactions/Connections": 0.8,
+            "Behavioral/Digital_Footprint/Online_Behavior": 0.2
+        },
+        "views": {
+            "Behavioral/Interactions/Online_Behavior": 0.6,
+            "Behavioral/Digital_Footprint/Online_Behavior": 0.4
+        },
+        "votes": {
+            "Behavioral/Digital_Footprint/Online_Behavior": 1.0
+        }
+    },
+    "adult_census_income": {
+        "age": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "workclass": {
+            "Identifier/Human/Connections": 0.2,
+            "Identifier/Human/Subject": 0.8
+        },
+        "fnlwgt": {
+            "NA": 1.0
+        },
+        "education": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "education.num": {
+            "NA": 0.8,
+            "Identifier/Human/Subject": 0.2
+        },
+        "marital.status": {
+            "Identifier/Human/Subject": 0.3333333333333333,
+            "Behavioral/Interactions/Relationships": 0.6666666666666666
+        },
+        "occupation": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "relationship": {
+            "Identifier/Human/Subject": 0.4,
+            "Behavioral/Interactions/Relationships": 0.6
+        },
+        "race": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "sex": {
+            "Identifier/Human/Gender": 0.4,
+            "Identifier/Human/Subject": 0.6
+        },
+        "capital.gain": {
+            "NA": 0.4,
+            "Behavioral/Transactional/Financial": 0.4,
+            "Identifier/Human/Subject": 0.2
+        },
+        "capital.loss": {
+            "NA": 0.4,
+            "Behavioral/Transactional/Financial": 0.4,
+            "Identifier/Human/Subject": 0.2
+        },
+        "hours.per.week": {
+            "Behavioral/Actions/Habit": 1.0
+        },
+        "native.country": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "income": {
+            "NA": 0.4,
+            "Behavioral/Transactional/Financial": 0.2,
+            "Identifier/Human/Subject": 0.4
+        }
+    },
+    "california_housing_prices": {
+        "longitude": {
+            "NA": 0.6,
+            "Identifier/Human/Subject": 0.2,
+            "Identifier/Human/Object": 0.2
+        },
+        "latitude": {
+            "NA": 0.6,
+            "Identifier/Human/Subject": 0.2,
+            "Identifier/Human/Object": 0.2
+        },
+        "housing_median_age": {
+            "NA": 0.4,
+            "Identifier/Human/Object": 0.4,
+            "Identifier/Devices/Characteristics": 0.2
+        },
+        "total_rooms": {
+            "NA": 0.4,
+            "Identifier/Human/Object": 0.4,
+            "Identifier/Devices/Characteristics": 0.2
+        },
+        "total_bedrooms": {
+            "NA": 0.4,
+            "Identifier/Human/Object": 0.4,
+            "Identifier/Devices/Characteristics": 0.2
+        },
+        "population": {
+            "NA": 0.8,
+            "Identifier/Human/Object": 0.2
+        },
+        "households": {
+            "NA": 0.6,
+            "Identifier/Human/Object": 0.4
+        },
+        "median_income": {
+            "NA": 0.6,
+            "Identifier/Human/Subject": 0.2,
+            "Identifier/Human/Object": 0.2
+        },
+        "median_house_value": {
+            "NA": 0.6,
+            "Identifier/Human/Object": 0.4
+        },
+        "ocean_proximity": {
+            "NA": 0.6,
+            "Identifier/Human/Object": 0.4
+        }
+    },
+    "contraceptive_method_choice": {
+        "wife_age": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "wife_education": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "husband_education": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "number_children": {
+            "Identifier/Human/Subject": 0.6,
+            "Behavioral/Interactions/Connections": 0.2,
+            "NA": 0.2
+        },
+        "wife_religion": {
+            "Behavioral/Interactions/Beliefs": 0.8,
+            "Identifier/Human/Object": 0.2
+        },
+        "wife_not_working": {
+            "Identifier/Human/Subject": 0.6,
+            "Behavioral/Interactions/Collaboration": 0.2,
+            "NA": 0.2
+        },
+        "husband_occupation": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "standard_of_living_index": {
+            "NA": 0.6,
+            "Identifier/Human/Subject": 0.4
+        },
+        "media_exposure": {
+            "Behavioral/Digital_Footprint/Content_Consumption": 0.4,
+            "Behavioral/Digital_Footprint/Content_Creation": 0.2,
+            "Behavioral/Digital_Footprint/Online_Behavior": 0.2,
+            "NA": 0.2
+        },
+        "contraceptive_method_used": {
+            "Identifier/Human/Subject": 0.2,
+            "NA": 0.2,
+            "Behavioral/Interations/Relationships": 0.2,
+            "Behavioral/Actions/Habit": 0.2,
+            "Identifier/Devices/Characteristics": 0.2
+        }
+    },
+    "mammographic_mass_dataset": {
+        "BI-RADS": {
+            "Identifier/Human/Subject": 0.8,
+            "NA": 0.2
+        },
+        "Age": {
+            "Identifier/Human/Subject": 1.0
+        },
+        "Shape": {
+            "NA": 0.4,
+            "Identifier/Human/Subject": 0.6
+        },
+        "Margin": {
+            "NA": 0.4,
+            "Identifier/Human/Subject": 0.4,
+            "Identifier/Devices/Characteristics": 0.2
+        },
+        "Density": {
+            "NA": 0.4,
+            "Identifier/Human/Subject": 0.4,
+            "Identifier/Devices/Characteristics": 0.2
+        },
+        "Severity": {
+            "NA": 0.4,
+            "Identifier/Human/Subject": 0.4,
+            "Identifier/Biological/Genetic": 0.2
+        }
+    }
+}

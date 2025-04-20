@@ -1,0 +1,6 @@
+numpy>=2.2.4
+polars>=1.27.1
+fastexcel>=0.13.0 
+fasttext>=0.9.3
+nltk>=3.9.1
+optuna>=4.3.0
