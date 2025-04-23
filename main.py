@@ -18,6 +18,7 @@ def psdc_objective(trial, metadata):
     wnum1 = trial.suggest_float('wnum1', 0.0, 1.0)
     wnum2 = trial.suggest_float('wnum2', 0.0, 1.0-wnum1)
     bsem = trial.suggest_float('bsem', 0.0, 1.0)
+    #TODO Fix bias
     
     weights=[wsem, 1.0-wsem]
     weights_num=[wnum1, wnum2, 1.0-(wnum1+wnum2)]
@@ -29,7 +30,7 @@ def psdc_objective(trial, metadata):
     mfc = model.most_frequent_categories()
     mfc = list(mfc.items())
     mfc = sorted(mfc, key=lambda tup: tup[1], reverse=True)
-    mfc = mfc[:50]
+    mfc = mfc[:26]
     test_features = model.get_features(mfc)
     acc = model.get_accuracy(test_features)
 

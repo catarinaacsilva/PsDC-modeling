@@ -74,15 +74,15 @@ def _text_pre_processing(txt, m=1):
 
 
 class NumericalFeature:
-    def __init__(self, min_value, max_value, dist):
+    def __init__(self, min_value, max_value, hist):
         self.min = min_value
         self.max = max_value
-        self.dist = dist
+        self.hist = hist
     
     def distance(self, nf, weights=None):
         if weights is None:
             weights = [1/3, 1/3, 1/3]
-        return (weights[0] * math.fabs(self.min - nf.min) + weights[1] * math.fabs(self.max - nf.max) + weights[2] * _cosine_distance(self.dist, nf.dist))/np.sum(weights)
+        return (weights[0] * math.fabs(self.min - nf.min) + weights[1] * math.fabs(self.max - nf.max) + weights[2] * _cosine_distance(self.hist, nf.hist))/np.sum(weights)
 
 
 class SemanticFeature:
@@ -112,6 +112,7 @@ class Feature:
             weights_num = [1/3, 1/3, 1/3]
 
         if self.nf is None or ft.nf is None:
+            #TODO: Categorical distance
             num_part = weights[1] * bias[1]
         else:
             num_part = weights[1] * self.nf.distance(ft.nf, weights=weights_num)
@@ -163,7 +164,7 @@ class PsDCModel:
                 if arr.dtype.kind in 'iuf':
                     # prepare data
                     arr = np.where(np.isnan(arr), np.nanmedian(arr), arr)
-                    h, _ = np.histogram(arr, bins=5)
+                    h, _ = np.histogram(arr, bins=10)
                     h = h/h.sum()
                     #logger.info(f'\t{feature_name}: numerical [{np.min(arr)} - {np.max(arr)}] {h}')
                     nf = NumericalFeature(np.min(arr), np.max(arr), h)
