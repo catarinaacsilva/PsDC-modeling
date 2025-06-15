@@ -57,7 +57,6 @@ def _nltk_pos_lemmatizer(token, tag=None):
 def _text_pre_processing(txt, m=1):
     if txt is not None:
         txt = re.sub('[-_.]', ' ', txt)
-        #txt = re.sub('([A-Z])', r' \1', txt)
         txt = re.sub(r'([a-z](?=[A-Z])|[A-Z](?=[A-Z][a-z]))', r'\1 ', txt)
 
         tokens = nltk.word_tokenize(txt)
@@ -125,10 +124,13 @@ class Feature:
 
 
 class PsDCModel:
-    def __init__(self, weights=None, weights_num=None, bias=None, datasets_path='datasets'):
+    def __init__(self, weights=None, weights_num=None, bias=None, datasets_path='datasets', lm=None):
         self.datasets_path=datasets_path
-        fasttext.util.download_model('en', if_exists='ignore')  # English
-        self.lm = fasttext.load_model('cc.en.300.bin')
+        if lm is None:
+            fasttext.util.download_model('en', if_exists='ignore')  # English
+            self.lm = fasttext.load_model('cc.en.300.bin')
+        else:
+            self.lm = lm
         self.samples = []
         if weights is None:
             weights = [1/2, 1/2]
